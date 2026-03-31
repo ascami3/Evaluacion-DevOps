@@ -1,19 +1,18 @@
 name: CI DevOps
 
-
 on:
-  push: 
-    branches: [main]
+  push:
+    branches:
+      - main
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
-   
     steps:
-      - name: Descargar código
+      - name: Checkout codigo
         uses: actions/checkout@v3
 
-      -name: Ejecutar script
-       run: echo "Hola Camila DevOps"
+      - name: Ejecutar script
+        run: echo "Hola Camila DevOps"
 
